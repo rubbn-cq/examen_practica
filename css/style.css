@@ -1,0 +1,218 @@
+body {
+
+    display: grid;
+    grid-template-areas: 
+    "navbar"
+    "hero"
+    "categories"
+    "products"
+    "why"
+    "promo"
+    "footer";
+
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+
+}
+
+section {
+    margin-top: 70px;
+}
+
+
+
+.navbar {
+    grid-area: navbar;
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+.search-bar {
+    max-width: 420px;
+    width: 100%;
+}
+
+
+
+.hero {
+    grid-area: hero;
+    padding: 80px 0;
+    background: white;
+}
+
+.hero-title {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.hero-text {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #555;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.categories {
+    grid-area: categories;
+}
+
+
+.category {
+    text-align: center;
+    padding: 10px;
+    transition: 0.25s;
+}
+
+.category:hover {
+    transform: translateY(-4px);
+}
+
+.category img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.products {
+    grid-area: products;
+}
+
+.product-card {
+
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    height: 100%;
+    transition: 0.25s;
+
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card img {
+
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+
+}
+
+.product-card h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-card p {
+    margin: 6px 0 12px;
+    font-weight: 500;
+}
+
+
+.why-us {
+
+    grid-area: why;
+    background: #f1f3f5;
+    padding: 70px 0;
+    margin-top: 80px;
+
+}
+
+.why-card {
+
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+
+}
+
+.why-card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+.why-icon {
+
+    font-size: 40px;
+    margin-bottom: 15px;
+
+}
+
+.why-card h5 {
+
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.why-card p {
+
+    color: #666;
+    font-size: 14px;
+
+}
+
+
+.promo {
+
+    grid-area: promo;
+    background: #6f42c1;
+    color: white;
+    padding: 70px 0;
+    margin-top: 80px;
+
+}
+
+.promo h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+footer {
+
+    grid-area: footer;
+    background: #222;
+    color: white;
+    padding: 40px 0;
+
+}
+
+footer h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 4px 0;
+    color: #ccc;
+    font-size: 14px;
+}
