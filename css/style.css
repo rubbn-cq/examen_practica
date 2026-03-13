@@ -1,14 +1,14 @@
 body {
 
     display: grid;
-    grid-template-areas: 
-    "navbar"
-    "hero"
-    "categories"
-    "products"
-    "why"
-    "promo"
-    "footer";
+    grid-template-areas:
+        "navbar"
+        "hero"
+        "categories"
+        "products"
+        "why"
+        "promo"
+        "footer";
 
     font-family: 'Poppins', sans-serif;
     background: #f8f9fa;
@@ -215,4 +215,26 @@ footer p {
     margin: 4px 0;
     color: #ccc;
     font-size: 14px;
+}
+
+
+@media (min-width:768px) {
+    body {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "navbar navbar"
+            "hero hero"
+            "categories categories"
+            "products products"
+            "why why"
+            "promo promo"
+            "footer footer";
+    }
+
+    .hero {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+    }
 }
